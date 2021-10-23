@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp"
+    app:cardBackgroundColor="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/currencyLayout">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/symbolTextView"
+            android:layout_margin="@dimen/_2sdp"
+            android:text="Symbol"
+            android:layout_toLeftOf="@id/currencyRateTv"
+            android:padding="@dimen/_3sdp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/currencyNameTv"
+            android:layout_below="@id/symbolTextView"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:padding="@dimen/_3sdp"
+            android:layout_margin="@dimen/_2sdp" />
+
+        <TextView
+            android:id="@+id/currencyRateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Rate"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:padding="@dimen/_3sdp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/currencyNameTv"
+            android:background="@color/white"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+</layout>
